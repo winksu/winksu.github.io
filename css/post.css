@@ -23,6 +23,7 @@
 .toc-widget {
     width: 345px;
     padding-left: 20px;
+    z-index: 1;
 }
 
 .toc-widget .toc-title {

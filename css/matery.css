@@ -578,6 +578,7 @@ header .go-back i {
     line-height: 1.2em;
     margin-bottom: 20px;
     position: relative;
+    text-shadow: 0px 1px 0px #f5f597, 0px 2px 0px #f5f597, 0px 3px 0px #f5f597, 0px 4px 0px #f5f597, 0px 5px 10px #f5f597;
 }
 
 .bg-cover .description {
