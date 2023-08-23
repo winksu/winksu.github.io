@@ -6,7 +6,7 @@
   <link href="http://aiss.love/atom.xml" rel="self"/>
   
   <link href="http://aiss.love/"/>
-  <updated>2023-08-21T05:09:41.885Z</updated>
+  <updated>2023-08-23T14:02:39.777Z</updated>
   <id>http://aiss.love/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo——解决使用Hexo搭建个人博客遇到的一些问题</title>
+    <link href="http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/"/>
+    <id>http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/</id>
+    <published>2023-08-23T13:53:58.000Z</published>
+    <updated>2023-08-23T14:02:39.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo——通过Hexo搭建个人博客</title>
     <link href="http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/"/>
     <id>http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/</id>
     <published>2023-08-21T04:50:07.000Z</published>
-    <updated>2023-08-21T05:09:41.885Z</updated>
+    <updated>2023-08-23T14:02:56.696Z</updated>
     
     
       
@@ -34,6 +58,8 @@
     
     
     
+    
+    <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
     
   </entry>
   
