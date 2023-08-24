@@ -6,7 +6,7 @@
   <link href="http://aiss.love/atom.xml" rel="self"/>
   
   <link href="http://aiss.love/"/>
-  <updated>2023-08-24T02:57:36.492Z</updated>
+  <updated>2023-08-24T03:20:02.556Z</updated>
   <id>http://aiss.love/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://aiss.love/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/"/>
     <id>http://aiss.love/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/</id>
     <published>2023-08-24T02:43:22.000Z</published>
-    <updated>2023-08-24T02:57:36.492Z</updated>
+    <updated>2023-08-24T03:20:02.556Z</updated>
     
     
       
@@ -35,31 +35,10 @@
     
     
     
+    <category term="个人博客" scheme="http://aiss.love/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
     
     <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>“博客主题名”</title>
-    <link href="http://aiss.love/2023/08/23/bo-ke-zhu-ti-ming/"/>
-    <id>http://aiss.love/2023/08/23/bo-ke-zhu-ti-ming/</id>
-    <published>2023-08-23T14:42:18.000Z</published>
-    <updated>2023-08-24T00:27:38.050Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;这也是一个测试页面！&quot;&gt;&lt;a href=&quot;#这也是一个测试页面！&quot; class=&quot;headerlink&quot; title=&quot;这也是一个测试页面！&quot;&gt;&lt;/a&gt;这也是一个测试页面！&lt;/h2&gt;&lt;h2 id=&quot;这也是一个测试页面！-1&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="test" scheme="http://aiss.love/tags/test/"/>
     
   </entry>
   
@@ -68,7 +47,7 @@
     <link href="http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/"/>
     <id>http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/</id>
     <published>2023-08-23T13:53:58.000Z</published>
-    <updated>2023-08-24T01:30:40.801Z</updated>
+    <updated>2023-08-24T03:19:51.109Z</updated>
     
     
       
@@ -82,6 +61,8 @@
     
     
     
+    <category term="个人博客" scheme="http://aiss.love/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
     
     <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
     
@@ -92,7 +73,7 @@
     <link href="http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/"/>
     <id>http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/</id>
     <published>2023-08-21T04:50:07.000Z</published>
-    <updated>2023-08-24T01:30:22.012Z</updated>
+    <updated>2023-08-24T03:20:06.932Z</updated>
     
     
       
@@ -105,6 +86,8 @@
     
     
     
+    <category term="个人博客" scheme="http://aiss.love/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
     
     <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
     
@@ -115,7 +98,7 @@
     <link href="http://aiss.love/2023/08/21/test/"/>
     <id>http://aiss.love/2023/08/21/test/</id>
     <published>2023-08-21T04:25:28.213Z</published>
-    <updated>2023-08-24T00:29:25.157Z</updated>
+    <updated>2023-08-24T03:12:41.069Z</updated>
     
     
       
@@ -138,7 +121,7 @@
     <link href="http://aiss.love/2023/08/19/hello-world/"/>
     <id>http://aiss.love/2023/08/19/hello-world/</id>
     <published>2023-08-19T08:31:08.700Z</published>
-    <updated>2023-08-19T08:31:08.700Z</updated>
+    <updated>2023-08-24T03:12:13.352Z</updated>
     
     
       
