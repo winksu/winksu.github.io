@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>“博客主题名”</title>
+      <link href="/2023/08/23/bo-ke-zhu-ti-ming/"/>
+      <url>/2023/08/23/bo-ke-zhu-ti-ming/</url>
+      
+        <content type="html"><![CDATA[<h2 id="这也是一个测试页面！"><a href="#这也是一个测试页面！" class="headerlink" title="这也是一个测试页面！"></a>这也是一个测试页面！</h2><h2 id="这也是一个测试页面！-1"><a href="#这也是一个测试页面！-1" class="headerlink" title="这也是一个测试页面！"></a>这也是一个测试页面！</h2><h2 id="这也是一个测试页面！-2"><a href="#这也是一个测试页面！-2" class="headerlink" title="这也是一个测试页面！"></a>这也是一个测试页面！</h2><h3 id="图片如下："><a href="#图片如下：" class="headerlink" title="图片如下："></a>图片如下：</h3><p><img src="https://img-blog.csdnimg.cn/235321a3a3fa46c3bd0fe3c3e28f34f0.png#pic_center" alt="Hexo与Node.js的版本对应"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo——解决使用Hexo搭建个人博客遇到的一些问题</title>
       <link href="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/"/>
       <url>/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/</url>
@@ -46,9 +65,15 @@
       <link href="/2023/08/21/test/"/>
       <url>/2023/08/21/test/</url>
       
-        <content type="html"><![CDATA[<h1 id="你好，这是一个测试页面！"><a href="#你好，这是一个测试页面！" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-1"><a href="#你好，这是一个测试页面！-1" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-2"><a href="#你好，这是一个测试页面！-2" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><img src="/2023/08/21/test/1.jpg" class="" title="this is test">]]></content>
+        <content type="html"><![CDATA[<h1 id="你好，这是一个测试页面！"><a href="#你好，这是一个测试页面！" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-1"><a href="#你好，这是一个测试页面！-1" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-2"><a href="#你好，这是一个测试页面！-2" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-3"><a href="#你好，这是一个测试页面！-3" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-4"><a href="#你好，这是一个测试页面！-4" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><h1 id="你好，这是一个测试页面！-5"><a href="#你好，这是一个测试页面！-5" class="headerlink" title="你好，这是一个测试页面！"></a>你好，这是一个测试页面！</h1><img src="/2023/08/21/test/1.jpg" class="" title="this is test">]]></content>
       
       
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
       
     </entry>
     
