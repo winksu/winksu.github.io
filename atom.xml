@@ -101,7 +101,7 @@
     <link href="http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/"/>
     <id>http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/</id>
     <published>2023-08-21T04:50:07.000Z</published>
-    <updated>2023-08-26T06:54:44.846Z</updated>
+    <updated>2023-08-26T09:41:12.747Z</updated>
     
     
       
@@ -117,7 +117,9 @@
     <category term="博客" scheme="http://aiss.love/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="-Hexo -Github" scheme="http://aiss.love/tags/Hexo-Github/"/>
+    <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
+    
+    <category term="Github" scheme="http://aiss.love/tags/Github/"/>
     
   </entry>
   
