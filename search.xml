@@ -38,12 +38,14 @@
       
       <categories>
           
-          <category> 个人博客 </category>
+          <category> 博客 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> Hexo </tag>
             
             <tag> Markdown </tag>
             
@@ -63,7 +65,7 @@
       
       <categories>
           
-          <category> 个人博客 </category>
+          <category> 博客 </category>
           
       </categories>
       
@@ -88,7 +90,7 @@
       
       <categories>
           
-          <category> 个人博客 </category>
+          <category> 博客 </category>
           
       </categories>
       
