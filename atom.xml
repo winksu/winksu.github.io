@@ -6,7 +6,7 @@
   <link href="http://aiss.love/atom.xml" rel="self"/>
   
   <link href="http://aiss.love/"/>
-  <updated>2023-08-24T03:20:02.556Z</updated>
+  <updated>2023-08-26T04:20:02.409Z</updated>
   <id>http://aiss.love/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Node.js——同时安装多个版本以及相关配置（简单易操作）</title>
+    <link href="http://aiss.love/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/"/>
+    <id>http://aiss.love/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/</id>
+    <published>2023-08-26T03:20:03.000Z</published>
+    <updated>2023-08-26T04:20:02.409Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://aiss.love/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="node" scheme="http://aiss.love/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo——如何写markdown文档并使用hexo发布博客</title>
     <link href="http://aiss.love/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/"/>
     <id>http://aiss.love/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/</id>
     <published>2023-08-24T02:43:22.000Z</published>
-    <updated>2023-08-24T03:20:02.556Z</updated>
+    <updated>2023-08-26T04:31:35.497Z</updated>
     
     
       
@@ -38,7 +64,7 @@
     <category term="个人博客" scheme="http://aiss.love/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="Hexo" scheme="http://aiss.love/tags/Hexo/"/>
+    <category term="Markdown" scheme="http://aiss.love/tags/Markdown/"/>
     
   </entry>
   
@@ -47,7 +73,7 @@
     <link href="http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/"/>
     <id>http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/</id>
     <published>2023-08-23T13:53:58.000Z</published>
-    <updated>2023-08-24T03:19:51.109Z</updated>
+    <updated>2023-08-26T04:33:52.272Z</updated>
     
     
       
@@ -73,7 +99,7 @@
     <link href="http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/"/>
     <id>http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/</id>
     <published>2023-08-21T04:50:07.000Z</published>
-    <updated>2023-08-24T03:20:06.932Z</updated>
+    <updated>2023-08-26T04:32:25.088Z</updated>
     
     
       

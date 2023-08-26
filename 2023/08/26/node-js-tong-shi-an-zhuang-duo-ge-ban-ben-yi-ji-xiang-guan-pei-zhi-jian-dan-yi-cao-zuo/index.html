@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="通过Hexo和GitHub搭建个人博客">
-    <meta name="description" content="通过Hexo搭建个人博客Hexo是一个基于Node.js的静态博客生成框架，它允许你用Markdown语法编写博客文章，并将其转换为HTML页面。通过Hexo，你可以方便地创建和管理个人博客，然后将生成的静态页面部署到网络服务器上。这使得博">
+    <meta name="keywords" content="Node.js同时安装多个版本以及相关配置（简单易操作）">
+    <meta name="description" content="
+前言Node.js是一个基于V8引擎的开源运行时环境，用于在服务器端运行JavaScript代码。它允许您使用JavaScript来编写服务器端应用程序，如网络应用、API和后端服务，而不仅仅局限于在浏览器中执行。Node.js的非阻塞I">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo——通过Hexo搭建个人博客 | winksu</title>
+    <title>Node.js——同时安装多个版本以及相关配置（简单易操作） | winksu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -346,12 +347,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://pic1.zhimg.com/v2-f5ca1150bf22dd77e636b0e2fced6d1c_1440w.jpg?source=172ae18b')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/source/medias/images/25.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo——通过Hexo搭建个人博客</h1>
+                    <h1 class="description center-align post-title">Node.js——同时安装多个版本以及相关配置（简单易操作）</h1>
                 </div>
             </div>
         </div>
@@ -375,8 +376,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/node/">
+                                <span class="chip bg-color">node</span>
                             </a>
                         
                     </div>
@@ -387,8 +388,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                个人博客
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
                     </div>
@@ -400,7 +401,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-21
+                    2023-08-26
                 </div>
                 
 
@@ -409,14 +410,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    849
+                    2.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    9 分
                 </div>
                 
 
@@ -434,52 +435,97 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="通过Hexo搭建个人博客"><a href="#通过Hexo搭建个人博客" class="headerlink" title="通过Hexo搭建个人博客"></a>通过Hexo搭建个人博客</h1><p>Hexo是一个基于Node.js的静态博客生成框架，它允许你用Markdown语法编写博客文章，并将其转换为HTML页面。通过Hexo，你可以方便地创建和管理个人博客，然后将生成的静态页面部署到网络服务器上。这使得博客的管理和发布变得更加简单和高效。<br>首先电脑要安装配置有git环境和node环境，还要有自己的GitHub账号。以下是Hexo与Node.js的版本对应关系：</p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/1.png" class="" title="Hexo与Node.js的版本对应">
-<p>接下来我们只需十步完成搭建！</p>
-<h2 id="第一步，打开cmd命令行全局安装Hexo-cli脚手架"><a href="#第一步，打开cmd命令行全局安装Hexo-cli脚手架" class="headerlink" title="第一步，打开cmd命令行全局安装Hexo-cli脚手架"></a>第一步，打开cmd命令行全局安装Hexo-cli脚手架</h2><p>使用 win+R 输入cmd 进入命令行界面，输入以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/2.png" class="" title="运行结果">
-<h2 id="第二步，在你喜欢的磁盘目录下创建一个空文件夹"><a href="#第二步，在你喜欢的磁盘目录下创建一个空文件夹" class="headerlink" title="第二步，在你喜欢的磁盘目录下创建一个空文件夹"></a>第二步，在你喜欢的磁盘目录下创建一个空文件夹</h2><p>我这里创建了一个winksu的空文件夹，进行第三步之前，一定要确保它是空的。</p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/3.png" class="" title="仅供参考">
-<h2 id="第三步，在上一步的文件夹下右键打开gitbush命令行界面，进行初始化"><a href="#第三步，在上一步的文件夹下右键打开gitbush命令行界面，进行初始化" class="headerlink" title="第三步，在上一步的文件夹下右键打开gitbush命令行界面，进行初始化"></a>第三步，在上一步的文件夹下右键打开gitbush命令行界面，进行初始化</h2><p>如果右键没有装载gitbush，可以在当前目录通过 shift+右键，打开终端，同样如下进行初始化：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/4.png" class="" title="初始化成功">
-<h2 id="第四步，启动查看Hexo网站是否初始化成功"><a href="#第四步，启动查看Hexo网站是否初始化成功" class="headerlink" title="第四步，启动查看Hexo网站是否初始化成功"></a>第四步，启动查看Hexo网站是否初始化成功</h2><p>输入以下命令启动：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/5.png" class="" title="运行结果">
-<p>在浏览器上输入给定的端口号<a target="_blank" rel="noopener" href="http://localhost:4000/%E8%BF%9B%E8%A1%8C%E8%AE%BF%E9%97%AE%E8%83%BD%E7%9C%8B%E5%88%B0%E5%A6%82%E4%B8%8B%E7%95%8C%E9%9D%A2%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E3%80%82">http://localhost:4000/进行访问能看到如下界面，就是初始化成功。</a></p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/6.png" class="" title="初始化成功">
+                <hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Node.js是一个基于V8引擎的开源运行时环境，用于在服务器端运行JavaScript代码。它允许您使用JavaScript来编写服务器端应用程序，如网络应用、API和后端服务，而不仅仅局限于在浏览器中执行。Node.js的非阻塞I/O和事件驱动的特性使其特别适合处理高并发的网络应用程序。本篇主要介绍node.js的安装和配置，以及如何在自己的电脑上安装多个版本的node.js，以便解决很多情况下由于node版本限制导致的一些麻烦。<br><strong>提示：</strong>此篇非使用NVM（node.js version management）node.js版本管理工具！</p>
+<hr>
+<h1 id="一、为什么要学习Node-js？"><a href="#一、为什么要学习Node-js？" class="headerlink" title="一、为什么要学习Node.js？"></a>一、为什么要学习Node.js？</h1><p>学习Node.js有如下几个好处：</p>
+<ol>
+<li><p><strong>一致的编程语言：</strong> 如果您已经熟悉JavaScript，学习Node.js可以让您在前端和后端使用相同的编程语言，减少学习曲线和切换成本。</p>
+</li>
+<li><p><strong>高性能：</strong> Node.js的非阻塞I/O和事件驱动架构使其在处理大量并发连接时表现出色，适用于构建实时应用和高性能的网络应用程序。</p>
+</li>
+<li><p><strong>丰富的生态系统：</strong> Node.js拥有庞大的开源社区，提供了许多可扩展的模块和库，可以帮助您快速构建功能丰富的应用程序。</p>
+</li>
+<li><p><strong>快速开发：</strong> 使用Node.js可以快速开发原型和MVP（最小可行产品），并以较短的时间推出产品。</p>
+</li>
+<li><p><strong>轻量级和高效：</strong> Node.js在资源使用方面表现出色，可以处理大量的请求而不占用太多的系统资源。</p>
+</li>
+<li><p><strong>跨平台：</strong> Node.js支持多个操作系统，使您可以在不同的环境中运行相同的代码。</p>
+</li>
+<li><p><strong>适用于微服务架构：</strong> Node.js适合构建微服务，可以将大型应用拆分为小型、独立的服务单元，更容易维护和扩展。</p>
+</li>
+</ol>
+<p>对于前端开发人员而言，学习Node.js可以使您具备构建高性能、实时性强的应用程序的能力，而且可以利用JavaScript的灵活性和丰富的生态系统。</p>
+<h1 id="二、从低到高安装Node-js"><a href="#二、从低到高安装Node-js" class="headerlink" title="二、从低到高安装Node.js"></a>二、从低到高安装Node.js</h1><p>安装注意事项：<br>首先，确保须从低版本开始往高版本安装，否则从高版本安装会产生许多问题，如果已经存在高版本的需要先卸载掉，然后从你个人需要的低版本node.js开始安装。</p>
+<h2 id="1-卸载已有的高版本node"><a href="#1-卸载已有的高版本node" class="headerlink" title="1.卸载已有的高版本node"></a>1.卸载已有的高版本node</h2><h3 id="1-1卸载node-js的三种方式"><a href="#1-1卸载node-js的三种方式" class="headerlink" title="1.1卸载node.js的三种方式"></a>1.1卸载node.js的三种方式</h3><p>（1）就是你在安装这个软件以后，这个软件就自己带有一个卸载的程序，你只要点击：开始—程序—找到这个程序—-上面就会有这个程序的卸载程序。uninstall node.js<br>（2）就是通过“卸载程序”来卸载，这个程序一般的Windows，自己都会带这个程序，你点：开始–控制面板—卸载程序—-找到这个要卸载的程序—点“卸载”就OK了。<br>（3）就是利用第三方软件。<br>我用腾讯电脑管家举例（免费安全软件，杀毒+管理2合1）。<br>打开腾讯电脑管家——工具箱——软件卸载。<br>电脑管家是直接把软件卸载同时把注册列表也就清理了。（有的软件重启后会自动删除）卸载完之后，会有残留，在实行强力卸载。</p>
+<h3 id="1-2检查是否卸载成功"><a href="#1-2检查是否卸载成功" class="headerlink" title="1.2检查是否卸载成功"></a>1.2检查是否卸载成功</h3><p>（1）在原文件目录查看是否卸载干净<br>（2）win+R，输入cmd，打开控制台，输入node -v，查看版本<br>（3）win+R，输入cmd，打开控制台，输入where node，查看文件所在目录</p>
+<h2 id="2-下载node-js"><a href="#2-下载node-js" class="headerlink" title="2.下载node.js"></a>2.下载node.js</h2><p>（1）node的版本可以去 <a target="_blank" rel="noopener" href="https://nodejs.org/">nodejs官方网站</a> 下载 或者在 <a target="_blank" rel="noopener" href="https://nodejs.org/dist/">这里</a> 下载都可以，Node.js有不同的版本，包括 LTS（长期支持）版本和最新版本。如果您希望稳定性和可靠性，可以选择LTS版本。</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/1.png" class="">
+<p>（2）建议下载 .zip 压缩文档，文档小，下载速度快，想安装在哪里就在哪里解压。旧版本的node在上图中的 Other Downloads 里面，可以点击下面的 Releases 进行下载。</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/2.png" class="">     
+<h2 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h2><h3 id="3-1解压下载完的node-js压缩包"><a href="#3-1解压下载完的node-js压缩包" class="headerlink" title="3.1解压下载完的node.js压缩包"></a>3.1解压下载完的node.js压缩包</h3><p>在安装node之前，我先选择一个node安装目录，我要安装到D盘下，所以我在D盘中新建啦一个nodejs的目录，把node-v10.2.1-win-x64.zip压缩包文件解压进去这个目录，此时文件名为压缩包名，我们就给它改名为node-v10.2.1（有说法是不改名后续安装其他版本会覆盖掉，未经实验）。</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/3.png" class="">
+<h3 id="3-2配置环境变量"><a href="#3-2配置环境变量" class="headerlink" title="3.2配置环境变量"></a>3.2配置环境变量</h3><p>（1）node安装好后暂时不能使用，你还需要配置环境变量，找到打开你的安装node的路径，复制绝对路径如下：</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/4.png" class="">
 
-<h2 id="第五步，进入自己的github，创建一个新的仓库，仓库名要与用户名同名，后缀-github-io"><a href="#第五步，进入自己的github，创建一个新的仓库，仓库名要与用户名同名，后缀-github-io" class="headerlink" title="第五步，进入自己的github，创建一个新的仓库，仓库名要与用户名同名，后缀~github.io"></a>第五步，进入自己的github，创建一个新的仓库，仓库名要与用户名同名，后缀~github.io</h2><img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/7.png" class="" title="new一个仓库">
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/8.png" class="" title="创建仓库">
-<h2 id="第六步，打开cmd，验证自己的git账户，目的为了后续生成ssh密钥"><a href="#第六步，打开cmd，验证自己的git账户，目的为了后续生成ssh密钥" class="headerlink" title="第六步，打开cmd，验证自己的git账户，目的为了后续生成ssh密钥"></a>第六步，打开cmd，验证自己的git账户，目的为了后续生成ssh密钥</h2><p>依次输入命令如下：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config <span class="token parameter variable">--global</span> user.name <span class="token string">"git用户名"</span>
-<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.email <span class="token string">"git邮箱"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/9.png" class="" title="验证账号">
-<h2 id="第七步，打开gitbush窗口，输入以下命令，获取ssh"><a href="#第七步，打开gitbush窗口，输入以下命令，获取ssh" class="headerlink" title="第七步，打开gitbush窗口，输入以下命令，获取ssh"></a>第七步，打开gitbush窗口，输入以下命令，获取ssh</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-C</span> git邮箱<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/10.png" class="" title="获取ssh">
+<p>（2）在此电脑鼠标右键依次打开：计算机=&gt; 属性=&gt; 高级系统设置=&gt;环境变量  将自己的node环境变量配置好。在系统变量的Path编辑：</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/5.png" class="">
+<p>（3）将你复制好的node（node.exe所在目录）的绝对路径，在此处新建并粘贴上即可。</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/6.png" class="">
+<p>（4）配置完成后点击确定，然后咱们打开CMD (win+R)，输入: node -v 命令检验：</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/7.png" class="">
+<p>如此，第一个版本就安装成功了！<br>接下来安装第二个版本，也是在相同 nodejs 目录下，把node-v12.20.0-win-x64.zip压缩包文件解压进去这个目录，此时文件名为压缩包名，我们给它改名为node-v12.20.0方便识别，配置环境变量和上面过程一样。</p>
+<h3 id="3-3验证安装成果"><a href="#3-3验证安装成果" class="headerlink" title="3.3验证安装成果"></a>3.3验证安装成果</h3><p>验证我们目前是否是安装了两个node版本：where node ，和当前使用的版本：node -v，我这里安装了三个，其实过程都是这样的，你还可以安装更多个。</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/8.png" class="">
+<h3 id="3-4自由切换node-js版本"><a href="#3-4自由切换node-js版本" class="headerlink" title="3.4自由切换node.js版本"></a>3.4自由切换node.js版本</h3><p>（1）打开系统环境变量，找到path，你想用哪个版本，就把哪个node变量放到所有node变量的最前面，比如我之前用的就是10.2.1的版本，此时；</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/9.png" class="">
+<p>（2）如果我想使用 12.20.0 的版本，可以通过右边的上下移按钮更换位置。</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/10.png" class="">
+<p>（3）然后咱们打开CMD (win+R)，输入： node -v，看此时的node版本：</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/11.png" class="">
+<p>很显然，切换成功！</p>
+<h1 id="三、Node-js配置全局安装路径"><a href="#三、Node-js配置全局安装路径" class="headerlink" title="三、Node.js配置全局安装路径"></a>三、Node.js配置全局安装路径</h1><p>  Node.js安装包通常会附带npm（Node Package Manager），它是用于安装、管理和共享Node.js模块（包）的工具。安装Node.js时会自动安装npm，无需额外操作。</p>
+<h2 id="1-了解全局和局部的概念"><a href="#1-了解全局和局部的概念" class="headerlink" title="1.了解全局和局部的概念"></a>1.了解全局和局部的概念</h2><p> <strong>（1）全局安装：</strong> 当你通过在命令行中运行 <code>npm install -g &lt;package-name&gt;</code> 进行全局安装时，所安装的包会在系统范围内可用，而不仅仅是在特定项目中（当用户在程序中require(package-name)的时候不用考虑模块在哪）。全局安装的包通常提供命令行工具，使你可以从终端直接运行它们。这些包位于一个预定义的全局安装路径中，通常需要管理员权限。全局安装的包对于系统中的所有项目都是可用的。</p>
+<p><strong>（2）局部安装：</strong> 当您在项目文件夹中运行 <code>npm install &lt;package-name&gt;</code> 时，所安装的包会局部安装在该项目的 <code>node_modules</code> 文件夹中。局部安装的包只对当前项目可用，不会影响其他项目。这种方式允许您在不同项目中使用不同版本的包，避免了全局包可能引发的冲突问题。</p>
+<h2 id="2-修改全局安装路径和局部缓存路径"><a href="#2-修改全局安装路径和局部缓存路径" class="headerlink" title="2.修改全局安装路径和局部缓存路径"></a>2.修改全局安装路径和局部缓存路径</h2><p>如果不修改全局安装<code>node_global</code>和局部缓存 <code>node_cache</code> 路径，用户下载的全局和局部模块会默认在C:\Users\Administrator\AppData\Roaming\npm这个路径下。修改步骤如下：<br>（1）在 nodejs 安装目录下，创建 <code>node_global</code>和 <code>node_cache</code>两个文件夹</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/12.png" class="">
+<p>(2)进入 cmd 命令行，输入如下命令，设置全局模块的安装路径到 <code>node_global</code>文件夹，设置缓存到 <code>node_cache</code>文件夹<br>更改全局缓存路径：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="第八步，打开c盘找到如图所示目录下的-ssh的文件，打开-id-rsa-pub-复制里面的全部内容"><a href="#第八步，打开c盘找到如图所示目录下的-ssh的文件，打开-id-rsa-pub-复制里面的全部内容" class="headerlink" title="第八步，打开c盘找到如图所示目录下的 .ssh的文件，打开 id_rsa.pub,复制里面的全部内容"></a>第八步，打开c盘找到如图所示目录下的 .ssh的文件，打开 id_rsa.pub,复制里面的全部内容</h2><img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/11.png" class="" title="找到ssh">
-<p>打开 .ssh文件，找到id_rsa.pub，复制里面的全部内容</p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/12.png" class="" title="复制ssh">
-<h2 id="第九步，将生成的ssh添加到github，可以ssh免密登录"><a href="#第九步，将生成的ssh添加到github，可以ssh免密登录" class="headerlink" title="第九步，将生成的ssh添加到github，可以ssh免密登录"></a>第九步，将生成的ssh添加到github，可以ssh免密登录</h2><p>进入github，点击头像，找到右边的settings，进去找到左边SSH and GPG keys，然后new一个SSH key：</p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/13.png" class="" title="new一个key">
-<p>将上一步复制到 id_rsa.pub 里的密钥粘贴到这里</p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/14.png" class="" title="粘贴ssh key">
-<h2 id="第九步，打开开始创建的文件夹，打开里面的-config-yml文件，修改最下面的repo为自己的地址"><a href="#第九步，打开开始创建的文件夹，打开里面的-config-yml文件，修改最下面的repo为自己的地址" class="headerlink" title="第九步，打开开始创建的文件夹，打开里面的_config.yml文件，修改最下面的repo为自己的地址"></a>第九步，打开开始创建的文件夹，打开里面的_config.yml文件，修改最下面的repo为自己的地址</h2><p>deploy:<br>type: git<br>repo: <a href="mailto:git@github.com">git@github.com</a>:username/username.github.io.git<br>branch: main<br><strong>注意：冒号后面是有一个空格的，少了会导致下一步出错！</strong></p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/15.png" class="" title="修改配置">
-<h2 id="第十步，打开gitbush，安装deploy-git目的为了使用命令部署到github"><a href="#第十步，打开gitbush，安装deploy-git目的为了使用命令部署到github" class="headerlink" title="第十步，打开gitbush，安装deploy-git目的为了使用命令部署到github"></a>第十步，打开gitbush，安装deploy-git目的为了使用命令部署到github</h2><p>在命令行运行如下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git <span class="token parameter variable">--save</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/16.png" class="" title="安装插件">
-<p>然后依次输入以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo c   <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span>
-hexo g       <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span>
-hexo d       <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>或者</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>最后一个命令会让输入yes，然后刷新github，发现以下文件上传成功，就OK了</p>
-<img src="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/17.png" class="" title="刷新github">
-<p>至此，以后你就可以使用XXX.github.io来访问你的个人博客了，还可以给自己的个人博客修改nice的主题。</p>
+<p>更改局部缓存路径：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache-min <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>（3）由于 node 全局模块大多数都是可以通过命令行访问的，还要把 “D:\nodejs\node_global” 加入到系统环境变量 PATH 中，方便直接使用命令行运行</p>
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/13.png" class="">
+<p> （4）检查是否配置成功，在cmd中运行如下命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">C:<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>system3<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>npm get prefix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">C:<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>system3<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>npm get cache<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+<h2 id="3-配置淘宝镜像"><a href="#3-配置淘宝镜像" class="headerlink" title="3.配置淘宝镜像"></a>3.配置淘宝镜像</h2><p> 配置淘宝镜像是为了加速 npm 包的下载和安装过程，特别是在中国地区。npm 默认从国外服务器下载包，但由于网络限制等原因，可能会导致下载速度较慢，甚至失败。</p>
+<p>配置淘宝镜像的好处：</p>
+<ol>
+<li><p><strong>加快下载速度：</strong> 淘宝镜像位于国内服务器上，因此从该镜像下载 npm 包会更快，减少了网络延迟。</p>
+</li>
+<li><p><strong>解决网络问题：</strong> 在一些情况下，访问国外服务器可能会受到网络限制或防火墙的影响，导致无法下载包。使用淘宝镜像可以避免这些问题。</p>
+</li>
+<li><p><strong>稳定性：</strong> 由于淘宝镜像是在国内提供的，因此在网络不稳定的情况下，从该镜像下载的机会更高，可以避免下载中断或失败。</p>
+</li>
+</ol>
+<p>配置方式如下：<br>（1）首先，可查看npm默认使用的镜像</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">C:<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>system3<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>npm config get registry
+https://registry.npmjs.org/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>（2）进入 cmd 命令行， 执行 npm 淘宝镜像配置</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 配置镜像站</span>
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> <span class="token assign-left variable">registry</span><span class="token operator">=</span>http://registry.npm.taobao.org
+<span class="token comment"># 检查一下镜像站是否正常</span>
+<span class="token function">npm</span> config get registry<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上就是如何给Node.js同时安装多个版本以及相关配置的内容，个人觉得非常简单易操作的，按照步骤来做，一般不会有什么问题。</p>
 
                 
             </div>
@@ -506,7 +552,7 @@ hexo d       <span class="token comment">#自动生成网站静态文件，并�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/">http://aiss.love/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/</a>
+                    <a href="http://aiss.love/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/">http://aiss.love/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -544,8 +590,8 @@ hexo d       <span class="token comment">#自动生成网站静态文件，并�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/node/">
+                                    <span class="chip bg-color">node</span>
                                 </a>
                             
                         </div>
@@ -624,16 +670,17 @@ hexo d       <span class="token comment">#自动生成网站静态文件，并�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/">
+                <a href="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/">
                     <div class="card-image">
                         
-                        <img src="https://i.loli.net/2020/12/15/CBjwueKp3oFsyZX.jpg" class="responsive-img" alt="Hexo——解决使用Hexo搭建个人博客遇到的一些问题">
+                        <img src="/source/medias/images/25.jpg" class="responsive-img" alt="Node.js——同时安装多个版本以及相关配置（简单易操作）">
                         
-                        <span class="card-title">Hexo——解决使用Hexo搭建个人博客遇到的一些问题</span>
+                        <span class="card-title">Node.js——同时安装多个版本以及相关配置（简单易操作）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -643,9 +690,58 @@ hexo d       <span class="token comment">#自动生成网站静态文件，并�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-23
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/node/">
+                        <span class="chip bg-color">node</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/">
+                    <div class="card-image">
+                        
+                        <img src="https://pic1.zhimg.com/v2-e80c8023fd727e099f5846faf5435eac_1440w.jpg?source=172ae18b" class="responsive-img" alt="Hexo——如何写markdown文档并使用hexo发布博客">
+                        
+                        <span class="card-title">Hexo——如何写markdown文档并使用hexo发布博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -661,53 +757,8 @@ hexo d       <span class="token comment">#自动生成网站静态文件，并�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2023/08/21/test/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="test">
-                        
-                        <span class="card-title">test</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-21
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            winksu
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/test/">
-                        <span class="chip bg-color">test</span>
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
