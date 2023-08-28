@@ -6,7 +6,7 @@
   <link href="http://aiss.love/atom.xml" rel="self"/>
   
   <link href="http://aiss.love/"/>
-  <updated>2023-08-26T05:34:42.297Z</updated>
+  <updated>2023-08-28T00:19:33.788Z</updated>
   <id>http://aiss.love/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack——学习webpack的基本使用</title>
+    <link href="http://aiss.love/2023/08/28/webpack-xue-xi-webpack-de-ji-ben-shi-yong/"/>
+    <id>http://aiss.love/2023/08/28/webpack-xue-xi-webpack-de-ji-ben-shi-yong/</id>
+    <published>2023-08-28T00:10:22.000Z</published>
+    <updated>2023-08-28T00:19:33.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://aiss.love/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="webpack" scheme="http://aiss.love/tags/webpack/"/>
+    
+    <category term="vue" scheme="http://aiss.love/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Node.js——同时安装多个版本以及相关配置（简单易操作）</title>
