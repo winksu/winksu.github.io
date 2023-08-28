@@ -460,35 +460,35 @@
 <h2 id="1-卸载已有的高版本node"><a href="#1-卸载已有的高版本node" class="headerlink" title="1.卸载已有的高版本node"></a>1.卸载已有的高版本node</h2><h3 id="1-1卸载node-js的三种方式"><a href="#1-1卸载node-js的三种方式" class="headerlink" title="1.1卸载node.js的三种方式"></a>1.1卸载node.js的三种方式</h3><p>（1）就是你在安装这个软件以后，这个软件就自己带有一个卸载的程序，你只要点击：开始—程序—找到这个程序—-上面就会有这个程序的卸载程序。uninstall node.js<br>（2）就是通过“卸载程序”来卸载，这个程序一般的Windows，自己都会带这个程序，你点：开始–控制面板—卸载程序—-找到这个要卸载的程序—点“卸载”就OK了。<br>（3）就是利用第三方软件。<br>我用腾讯电脑管家举例（免费安全软件，杀毒+管理2合1）。<br>打开腾讯电脑管家——工具箱——软件卸载。<br>电脑管家是直接把软件卸载同时把注册列表也就清理了。（有的软件重启后会自动删除）卸载完之后，会有残留，在实行强力卸载。</p>
 <h3 id="1-2检查是否卸载成功"><a href="#1-2检查是否卸载成功" class="headerlink" title="1.2检查是否卸载成功"></a>1.2检查是否卸载成功</h3><p>（1）在原文件目录查看是否卸载干净<br>（2）win+R，输入cmd，打开控制台，输入node -v，查看版本<br>（3）win+R，输入cmd，打开控制台，输入where node，查看文件所在目录</p>
 <h2 id="2-下载node-js"><a href="#2-下载node-js" class="headerlink" title="2.下载node.js"></a>2.下载node.js</h2><p>（1）node的版本可以去 <a target="_blank" rel="noopener" href="https://nodejs.org/">nodejs官方网站</a> 下载 或者在 <a target="_blank" rel="noopener" href="https://nodejs.org/dist/">这里</a> 下载都可以，Node.js有不同的版本，包括 LTS（长期支持）版本和最新版本。如果您希望稳定性和可靠性，可以选择LTS版本。</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/1.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/1.png" class>
 <p>（2）建议下载 .zip 压缩文档，文档小，下载速度快，想安装在哪里就在哪里解压。旧版本的node在上图中的 Other Downloads 里面，可以点击下面的 Releases 进行下载。</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/2.png" class="">     
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/2.png" class>     
 <h2 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h2><h3 id="3-1解压下载完的node-js压缩包"><a href="#3-1解压下载完的node-js压缩包" class="headerlink" title="3.1解压下载完的node.js压缩包"></a>3.1解压下载完的node.js压缩包</h3><p>在安装node之前，我先选择一个node安装目录，我要安装到D盘下，所以我在D盘中新建啦一个nodejs的目录，把node-v10.2.1-win-x64.zip压缩包文件解压进去这个目录，此时文件名为压缩包名，我们就给它改名为node-v10.2.1（有说法是不改名后续安装其他版本会覆盖掉，未经实验）。</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/3.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/3.png" class>
 <h3 id="3-2配置环境变量"><a href="#3-2配置环境变量" class="headerlink" title="3.2配置环境变量"></a>3.2配置环境变量</h3><p>（1）node安装好后暂时不能使用，你还需要配置环境变量，找到打开你的安装node的路径，复制绝对路径如下：</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/4.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/4.png" class>
 
 <p>（2）在此电脑鼠标右键依次打开：计算机=&gt; 属性=&gt; 高级系统设置=&gt;环境变量  将自己的node环境变量配置好。在系统变量的Path编辑：</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/5.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/5.png" class>
 <p>（3）将你复制好的node（node.exe所在目录）的绝对路径，在此处新建并粘贴上即可。</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/6.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/6.png" class>
 <p>（4）配置完成后点击确定，然后咱们打开CMD (win+R)，输入: node -v 命令检验：</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/7.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/7.png" class>
 <p>如此，第一个版本就安装成功了！<br>接下来安装第二个版本，也是在相同 nodejs 目录下，把node-v12.20.0-win-x64.zip压缩包文件解压进去这个目录，此时文件名为压缩包名，我们给它改名为node-v12.20.0方便识别，配置环境变量和上面过程一样。</p>
 <h3 id="3-3验证安装成果"><a href="#3-3验证安装成果" class="headerlink" title="3.3验证安装成果"></a>3.3验证安装成果</h3><p>验证我们目前是否是安装了两个node版本：where node ，和当前使用的版本：node -v，我这里安装了三个，其实过程都是这样的，你还可以安装更多个。</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/8.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/8.png" class>
 <h3 id="3-4自由切换node-js版本"><a href="#3-4自由切换node-js版本" class="headerlink" title="3.4自由切换node.js版本"></a>3.4自由切换node.js版本</h3><p>（1）打开系统环境变量，找到path，你想用哪个版本，就把哪个node变量放到所有node变量的最前面，比如我之前用的就是10.2.1的版本，此时；</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/9.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/9.png" class>
 <p>（2）如果我想使用 12.20.0 的版本，可以通过右边的上下移按钮更换位置。</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/10.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/10.png" class>
 <p>（3）然后咱们打开CMD (win+R)，输入： node -v，看此时的node版本：</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/11.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/11.png" class>
 <p>很显然，切换成功！</p>
 <h1 id="三、Node-js配置全局安装路径"><a href="#三、Node-js配置全局安装路径" class="headerlink" title="三、Node.js配置全局安装路径"></a>三、Node.js配置全局安装路径</h1><p>  Node.js安装包通常会附带npm（Node Package Manager），它是用于安装、管理和共享Node.js模块（包）的工具。安装Node.js时会自动安装npm，无需额外操作。</p>
 <h2 id="1-了解全局和局部的概念"><a href="#1-了解全局和局部的概念" class="headerlink" title="1.了解全局和局部的概念"></a>1.了解全局和局部的概念</h2><p> <strong>（1）全局安装：</strong> 当你通过在命令行中运行 <code>npm install -g &lt;package-name&gt;</code> 进行全局安装时，所安装的包会在系统范围内可用，而不仅仅是在特定项目中（当用户在程序中require(package-name)的时候不用考虑模块在哪）。全局安装的包通常提供命令行工具，使你可以从终端直接运行它们。这些包位于一个预定义的全局安装路径中，通常需要管理员权限。全局安装的包对于系统中的所有项目都是可用的。</p>
 <p><strong>（2）局部安装：</strong> 当您在项目文件夹中运行 <code>npm install &lt;package-name&gt;</code> 时，所安装的包会局部安装在该项目的 <code>node_modules</code> 文件夹中。局部安装的包只对当前项目可用，不会影响其他项目。这种方式允许您在不同项目中使用不同版本的包，避免了全局包可能引发的冲突问题。</p>
 <h2 id="2-修改全局安装路径和局部缓存路径"><a href="#2-修改全局安装路径和局部缓存路径" class="headerlink" title="2.修改全局安装路径和局部缓存路径"></a>2.修改全局安装路径和局部缓存路径</h2><p>如果不修改全局安装<code>node_global</code>和局部缓存 <code>node_cache</code> 路径，用户下载的全局和局部模块会默认在C:\Users\Administrator\AppData\Roaming\npm这个路径下。修改步骤如下：<br>（1）在 nodejs 安装目录下，创建 <code>node_global</code>和 <code>node_cache</code>两个文件夹</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/12.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/12.png" class>
 <p>(2)进入 cmd 命令行，输入如下命令，设置全局模块的安装路径到 <code>node_global</code>文件夹，设置缓存到 <code>node_cache</code>文件夹<br>更改全局缓存路径：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -498,7 +498,7 @@
 <p>更改局部缓存路径：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache-min <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>（3）由于 node 全局模块大多数都是可以通过命令行访问的，还要把 “D:\nodejs\node_global” 加入到系统环境变量 PATH 中，方便直接使用命令行运行</p>
-<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/13.png" class="">
+<img src="/2023/08/26/node-js-tong-shi-an-zhuang-duo-ge-ban-ben-yi-ji-xiang-guan-pei-zhi-jian-dan-yi-cao-zuo/13.png" class>
 <p> （4）检查是否配置成功，在cmd中运行如下命令</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">C:<span class="token punctuation">\</span>Windows<span class="token punctuation">\</span>system3<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span>npm get prefix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -677,7 +677,7 @@ https://registry.npmjs.org/<span aria-hidden="true" class="line-numbers-rows"><s
                 <a href="/2023/08/28/webpack-xue-xi-webpack-de-ji-ben-shi-yong/">
                     <div class="card-image">
                         
-                        <img src="https://img-blog.csdnimg.cn/2020060115153798.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0J1bGVfZGF6ZQ==,size_16,color_FFFFFF,t_70" class="responsive-img" alt="webpack——学习webpack的基本使用">
+                        <img src="https://img-blog.csdnimg.cn/2020081720464593.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lUX196eg==,size_16,color_FFFFFF,t_70#pic_center" class="responsive-img" alt="webpack——学习webpack的基本使用">
                         
                         <span class="card-title">webpack——学习webpack的基本使用</span>
                     </div>
