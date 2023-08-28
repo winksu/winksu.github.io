@@ -445,8 +445,8 @@
 <h2 id="一、怎么写博客？"><a href="#一、怎么写博客？" class="headerlink" title="一、怎么写博客？"></a>一、怎么写博客？</h2><p>首先我们要知道自己的博客文件的存放目录是在博客根目录~/source/_posts的里面存放着的。</p>
 <h2 id="二、写博客的步骤"><a href="#二、写博客的步骤" class="headerlink" title="二、写博客的步骤"></a>二、写博客的步骤</h2><h3 id="1-新建一个博客-hexo-new-“博客主题名”"><a href="#1-新建一个博客-hexo-new-“博客主题名”" class="headerlink" title="1.新建一个博客 hexo new “博客主题名”"></a>1.新建一个博客 hexo new “博客主题名”</h3><p>在博客根目录下，右键打开git bush，运行 hexo new “博客主题名” 命令，它会自动生成一个 .md 文件和一个同名文件夹，文件夹里面可以用来存放同名 .md文档里用到的图片。</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new “博客主题名”<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/1.png" class>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/2.png" class>
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/1.png" class="">
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/2.png" class="">
 <p>如果想要同时自动生成同名文件夹，需要在根目录下的 _config.yml 打开这个配置</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">post_asset_folder</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -507,19 +507,19 @@ var foo = 'bar';<span aria-hidden="true" class="line-numbers-rows"><span></span>
 |:--------:| -------------:|
 | centered 文本居中 | right-aligned 文本居右 |
 </code></pre>
-<h3 id="3-编辑-markdown-文档的快速入门方法，新手推荐！"><a href="#3-编辑-markdown-文档的快速入门方法，新手推荐！" class="headerlink" title="3.编辑 markdown 文档的快速入门方法，新手推荐！"></a>3.编辑 markdown 文档的快速入门方法，新手推荐！</h3><p>   打开csdn网站，在创作中新的首页，有一个 markdown 编辑器，使用起来对新手非常友好<br>   <img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/3.png" class><br>不仅有语法介绍，还有很多的新手模板可以选择</p>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/4.png" class>
+<h3 id="3-编辑-markdown-文档的快速入门方法，新手推荐！"><a href="#3-编辑-markdown-文档的快速入门方法，新手推荐！" class="headerlink" title="3.编辑 markdown 文档的快速入门方法，新手推荐！"></a>3.编辑 markdown 文档的快速入门方法，新手推荐！</h3><p>   打开csdn网站，在创作中新的首页，有一个 markdown 编辑器，使用起来对新手非常友好<br>   <img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/3.png" class=""><br>不仅有语法介绍，还有很多的新手模板可以选择</p>
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/4.png" class="">
 <p>还可以在左边编辑同时在右边预览，对着模板改，比葫芦画瓢，编写完成后可以导出为md文件</p>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/5.png" class>
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/5.png" class="">
 <h3 id="4-将上一步导出的md文件中的内容移植到第一部创建的md文件中。"><a href="#4-将上一步导出的md文件中的内容移植到第一部创建的md文件中。" class="headerlink" title="4.将上一步导出的md文件中的内容移植到第一部创建的md文件中。"></a>4.将上一步导出的md文件中的内容移植到第一部创建的md文件中。</h3><p> 这一步只需要把导出的md打开，复制粘贴到你自己创建的md文档中，这里呢，并不是粘贴完成之后就万事大吉了，如下图所示，是导出 md 文档中的插入图片语法格式，标准的markdown语法：</p>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/6.png" class>
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/6.png" class="">
 <p>然而，实际的运行效果却是：</p>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/7.png" class>
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/7.png" class="">
 <h3 id="5-解决插入图片的问题，md-语法插入的图片可能会在-hexo中无法显示"><a href="#5-解决插入图片的问题，md-语法插入的图片可能会在-hexo中无法显示" class="headerlink" title="5.解决插入图片的问题，md 语法插入的图片可能会在 hexo中无法显示"></a>5.解决插入图片的问题，md 语法插入的图片可能会在 hexo中无法显示</h3><p>此时有一种解决办法，使用hexo支持的插入图片语法格式，插入图片语法如下：</p>
  
 <p><strong>注意：</strong>中间都有空格分开！要插入的图片都要放在 .md文件的同名文件夹里！</p>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/8.png" class>
-<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/9.png" class>
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/8.png" class="">
+<img src="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/9.png" class="">
 <h3 id="6-发布编辑好的博客"><a href="#6-发布编辑好的博客" class="headerlink" title="6.发布编辑好的博客"></a>6.发布编辑好的博客</h3><p>打开 cmd 命令行工具，通过依次输入以下命令进行发布：</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo c
 hexo g <span class="token parameter variable">-d</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
