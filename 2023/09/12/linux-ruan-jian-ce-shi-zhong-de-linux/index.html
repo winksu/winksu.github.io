@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo——解决使用Hexo搭建个人博客遇到的一些问题, winksu">
-    <meta name="description" content="
-前言前几天在使用Hexo和GitHub创建个人博客的时候遇到了一些问题，也可以说是坑吧，主要遇到的有两个，一个是刚开始初始化的时候，一个是最后一步部署到GitHub的时候。没错，就很离谱，一个是劝退你，一个是先给你希望，最后再让你绝望。我">
+    <meta name="keywords" content="Linux在软件测试中的常用命令">
+    <meta name="description" content="前言Linux是一种开源的操作系统内核，最初由Linus Torvalds于1991年创建。它被广泛用于各种设备和计算机上，包括个人电脑、服务器、移动设备等。Linux内核负责管理硬件资源，如处理器、内存和设备驱动程序。此外，许多人在Lin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo——解决使用Hexo搭建个人博客遇到的一些问题 | winksu</title>
+    <title>Linux——软件测试中的Linux | winksu</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -347,12 +346,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2020/12/15/CBjwueKp3oFsyZX.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img2.baidu.com/it/u=3732659581,2264503440&fm=253&fmt=auto&app=138&f=JPEG?w=952&h=500')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo——解决使用Hexo搭建个人博客遇到的一些问题</h1>
+                    <h1 class="description center-align post-title">Linux——软件测试中的Linux</h1>
                 </div>
             </div>
         </div>
@@ -376,8 +375,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/Software-testing/">
+                                <span class="chip bg-color">Software testing</span>
                             </a>
                         
                     </div>
@@ -388,8 +391,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                博客
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                软件测试
                             </a>
                         
                     </div>
@@ -401,7 +404,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-08-23
+                    2023-09-12
                 </div>
                 
 
@@ -410,14 +413,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    6 分
                 </div>
                 
 
@@ -435,43 +438,77 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前几天在使用Hexo和GitHub创建个人博客的时候遇到了一些问题，也可以说是坑吧，主要遇到的有两个，一个是刚开始初始化的时候，一个是最后一步部署到GitHub的时候。没错，就很离谱，一个是劝退你，一个是先给你希望，最后再让你绝望。我也是试了很久，才找到以下几种解决办法。</p>
-<hr>
-<h1 id="一、初始化阶段连接不到GitHub，一直克隆失败"><a href="#一、初始化阶段连接不到GitHub，一直克隆失败" class="headerlink" title="一、初始化阶段连接不到GitHub，一直克隆失败"></a>一、初始化阶段连接不到GitHub，一直克隆失败</h1><h2 id="1-在初始化阶段踩的坑，大多数人第一步都完成不了就很容易让人直接劝退。。。"><a href="#1-在初始化阶段踩的坑，大多数人第一步都完成不了就很容易让人直接劝退。。。" class="headerlink" title="1.在初始化阶段踩的坑，大多数人第一步都完成不了就很容易让人直接劝退。。。"></a>1.在初始化阶段踩的坑，大多数人第一步都完成不了就很容易让人直接劝退。。。</h2><p>在使用 hexo init 的时候出现下面这样的情况，简直让人不能忍受！！报错代码如下：<br>fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git/">https://github.com/hexojs/hexo-starter.git/</a>‘: Recv failure: Connection was reset<br>WARN  git clone failed. Copying data instead<br>FATAL Something’s wrong. Maybe you can find the solution here: <a target="_blank" rel="noopener" href="http://hexo.io/docs/troubleshooting.html">http://hexo.io/docs/troubleshooting.html</a><br>Error: EPERM: operation not permitted, mkdir ‘D:’</p>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/1.png" class="" title="报错图片">
-<h2 id="2-这样的情况我遇到有两种原因："><a href="#2-这样的情况我遇到有两种原因：" class="headerlink" title="2.这样的情况我遇到有两种原因："></a>2.这样的情况我遇到有两种原因：</h2><h3 id="2-1既没有配置npm淘宝镜像又没有打开“科学上网“工具，这样的情况下，二者完成其一一般都能解决。"><a href="#2-1既没有配置npm淘宝镜像又没有打开“科学上网“工具，这样的情况下，二者完成其一一般都能解决。" class="headerlink" title="2.1既没有配置npm淘宝镜像又没有打开“科学上网“工具，这样的情况下，二者完成其一一般都能解决。"></a>2.1既没有配置npm淘宝镜像又没有打开“科学上网“工具，这样的情况下，二者完成其一一般都能解决。</h3><p> （1）配置 npm 淘宝镜像<br> 淘宝镜像是指淘宝提供的一个软件源，可以用于下载和安装各种软件包。为什么需要安装淘宝镜像呢？因为在国内，访问国外的软件源速度很慢，而淘宝镜像是国内的，下载速度快，可以提高软件安装的效率。打开 cmd 运行如下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Linux是一种开源的操作系统内核，最初由Linus Torvalds于1991年创建。它被广泛用于各种设备和计算机上，包括个人电脑、服务器、移动设备等。Linux内核负责管理硬件资源，如处理器、内存和设备驱动程序。此外，许多人在Linux内核的基础上构建了各种不同的Linux发行版（例如Ubuntu、Fedora、Debian等），这些发行版通常包含了额外的软件、工具和图形界面，使其成为完整的操作系统。由于其开源性质，Linux能够由社区共同维护和改进，具有高度的自定义性和稳定性。</p>
+<h2 id="Linux命令的基本格式及常见形式"><a href="#Linux命令的基本格式及常见形式" class="headerlink" title="Linux命令的基本格式及常见形式"></a>Linux命令的基本格式及常见形式</h2><p>Linux命令的基本格式通常如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">command [options] [arguments]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p> 安装配置完成后，继续运行 hexo init 就能解决了。<br> （2）打开“科学上网”工具，直接运行 hexo init 就行了。</p>
-<h3 id="2-2打开了“科学上网”工具，运行-hexo-init-还是一直报上面的错误！"><a href="#2-2打开了“科学上网”工具，运行-hexo-init-还是一直报上面的错误！" class="headerlink" title="2.2打开了“科学上网”工具，运行 hexo init 还是一直报上面的错误！"></a>2.2打开了“科学上网”工具，运行 hexo init 还是一直报上面的错误！</h3><p>这种情况下可能是科学上网工具不稳定导致的网络连接不稳定，这里建议关掉并退出工具，再次执行 hexo init 初始化命令，如果还是不行，这里推荐一种不用“科学上网”，不连接到GitHub也能初始化的操作：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ npx hexo init 【myblog】<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在 git bush 运行以上命令，简直是不愿意使用科学上网工具的小伙伴的福音！它会直接在当前空文件下创建一个 myblog 的文件并进行初始化。</p>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/2.png" class="" title="创建成功图片">
-
-<h1 id="二、在最后一步将自己创建好的博客上传部署到github上，又出现报错！！！"><a href="#二、在最后一步将自己创建好的博客上传部署到github上，又出现报错！！！" class="headerlink" title="二、在最后一步将自己创建好的博客上传部署到github上，又出现报错！！！"></a>二、在最后一步将自己创建好的博客上传部署到github上，又出现报错！！！</h1><h2 id="1-问题描述如下"><a href="#1-问题描述如下" class="headerlink" title="1.问题描述如下"></a>1.问题描述如下</h2><p>ssh: connect to host github.com port 22: Connection timed out<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.<br>FATAL Something’s wrong. Maybe you can find the solution here: <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>Error: Spawn failed<br>at ChildProcess.<anonymous> (D:\Myblog\myblog\node_modules\hexo-util\lib\spawn.js:51:21)<br>at ChildProcess.emit (events.js:314:20)<br>at ChildProcess.cp.emit (D:\Myblog\myblog\node_modules\cross-spawn\lib\enoent.js:34:29)<br>at Process.ChildProcess._handle.onexit (internal/child_process.js:276:12)</anonymous></p>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/3.png" class="" title="报错图片">
-
-<p>一般这种情况大多是网络原因导致的，科学上网工具不稳定，DNS解析被污染等因素。我们可以详细看看建立 ssh 连接的过程中发生了什么，可以使用 ssh -v命令，-v表示 verbose，会打出详细日志。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ssh</span> <span class="token parameter variable">-vT</span> git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/4.png" class="" title="日志图片">
-<p>从上图可以看出，虽然访问的IP地址目测也没什么毛病，但是不管重复几次它还是连接超时导致无法部署，然后它显示SSH也连接失败，说明这个 22 端口目前是有问题的。</p>
-<h2 id="2-解决办法"><a href="#2-解决办法" class="headerlink" title="2.解决办法"></a>2.解决办法</h2><h3 id="2-1在-C-Users-Administrator-ssh-中找到-ssh文件夹（此前配置SSH时会生成该文件夹）"><a href="#2-1在-C-Users-Administrator-ssh-中找到-ssh文件夹（此前配置SSH时会生成该文件夹）" class="headerlink" title="2.1在 C:\Users\Administrator.ssh 中找到.ssh文件夹（此前配置SSH时会生成该文件夹）"></a>2.1在 C:\Users\Administrator.ssh 中找到.ssh文件夹（此前配置SSH时会生成该文件夹）</h3><p>在 .ssh 文件夹中新建文本文件 config ,不带后缀（可以新建文本文档，去掉 .txt 后缀）<br>打开 config 文件，输入以下内容，保存后即可，其中<a href="mailto:xxx@qq.com">xxx@qq.com</a> 为你自己的邮箱</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">Host github.com
-User xxx@qq.com
-Hostname ssh.github.com
-PreferredAuthentications publickey
-IdentityFile ~/.ssh/id_rsa
-Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-2修改hosts文件"><a href="#2-2修改hosts文件" class="headerlink" title="2.2修改hosts文件"></a>2.2修改hosts文件</h3><p>操作系统中 hosts 文件的权限优先级高于DNS服务器，在 C:\Windows\System32\drivers\etc 目录下找到并修改 hosts 文件，增加一条 github.com 的域名映射可以解决。</p>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/5.png" class="" title="修改hosts图片">
-<p>再次运行<code>$ ssh -vT git@github.com</code>检查，发现连接成功了！</p>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/6.png" class="" title="成功图片">
-<p>这里输入yes，就连接成功了！</p>
-<img src="/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/7.png" class="" title="连接成功图片">
-<p>最后，输入 hexo d 就能够上传部署成功了！</p>
-<hr>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上就是所有要说的内容了，只是我个人在搭建过程中遇到的一些问题，仅供参考一下，每个人遇到的问题可能都是不一样的，具体问题具体分析，多查查，多看看，一般都能解决的。</p>
+<ul>
+<li><code>command</code>: 要执行的命令的名称。</li>
+<li><code>options</code>: 命令的选项，通常以短横线（-）或双短横线（–）开头。</li>
+<li><code>arguments</code>: 命令的参数，是命令操作的对象。</li>
+</ul>
+<p>常见的命令形式包括：</p>
+<ol>
+<li><strong>无选项和参数：</strong> 最简单的形式，只输入命令名称即可，例如：<code>ls</code>。</li>
+<li><strong>带选项，无参数：</strong> 使用命令选项，但没有其他参数，例如：<code>ls -l</code>。</li>
+<li><strong>带选项和参数：</strong> 同时使用命令选项和参数，例如：<code>cp -r source_directory destination_directory</code>。</li>
+<li><strong>带长选项：</strong> 有些命令支持长选项，使用双短横线，例如：<code>ls --color=auto</code>。</li>
+<li><strong>多个选项：</strong> 可以在同一命令中组合多个选项，例如：<code>ls -l -a</code>，或者简写为 <code>ls -la</code>。</li>
+<li><strong>位置参数：</strong> 有些命令可能需要指定位置参数，例如：<code>ping google.com</code>。</li>
+</ol>
+<p>此外，还有一些特殊形式的命令，如管道（<code>|</code>）、重定向（<code>&gt;</code>、<code>&gt;&gt;</code>）和后台运行（<code>&amp;</code>）等，用于将多个命令连接起来或控制命令的输入和输出。</p>
+<p>需要注意的是，每个命令的选项和参数都可能因命令而异，因此在使用命令前最好查阅相关文档或使用命令的帮助选项（通常是 <code>-h</code> 或 <code>--help</code>）来了解正确的用法和选项。</p>
+<h2 id="为什么软件测试会用到Linux"><a href="#为什么软件测试会用到Linux" class="headerlink" title="为什么软件测试会用到Linux"></a>为什么软件测试会用到Linux</h2><p>软件测试中使用Linux有以下几个原因：</p>
+<ol>
+<li><p><strong>多样性的测试环境：</strong> Linux操作系统有多个发行版，每个发行版又有不同的配置和特性。在Linux上进行测试可以确保软件在各种环境下都能正常工作，从而提高软件的稳定性和兼容性。</p>
+</li>
+<li><p><strong>服务器端应用测试：</strong> 许多服务器端应用和服务都在Linux上运行，如Web服务器（如Apache、Nginx）、数据库服务器（如MySQL、PostgreSQL）等。为了确保这些应用在Linux环境下正常运行，需要进行针对性的测试。</p>
+</li>
+<li><p><strong>开源软件生态系统：</strong> Linux是开源软件的中心，许多开源项目都在Linux上进行开发和测试。如果你的软件与其他开源软件进行交互，那么在Linux上测试可以更好地与这些项目集成。</p>
+</li>
+<li><p><strong>脚本和自动化测试：</strong> Linux上有丰富的脚本和自动化测试工具，如Shell脚本、Python等。这些工具可以帮助测试人员编写自动化测试脚本，从而提高测试效率和一致性。</p>
+</li>
+<li><p><strong>性能和稳定性测试：</strong> Linux通常在高性能和稳定性方面表现出色。许多企业和项目需要测试软件在高负载情况下的性能和稳定性，因此在Linux上进行这些测试可以提供更真实的结果。</p>
+</li>
+<li><p><strong>开发者工具和调试：</strong> Linux提供了丰富的开发者工具和调试选项，这对于诊断和解决软件问题非常有帮助。测试人员可以使用这些工具来检查和修复潜在的错误。</p>
+</li>
+</ol>
+<p>总之，Linux作为一个多样性、稳定性和性能强大的操作系统，为软件测试提供了一个理想的平台，可以确保软件在各种不同情况下都能正常运行。</p>
+<h2 id="软件测试中常用的linux命令"><a href="#软件测试中常用的linux命令" class="headerlink" title="软件测试中常用的linux命令"></a>软件测试中常用的linux命令</h2><p>在软件测试中，以下是一些常用的Linux命令，可以帮助你进行测试和排查问题：</p>
+<ol>
+<li><strong>ls</strong>: 列出目录中的文件和子目录。</li>
+<li><strong>cd</strong>: 切换当前工作目录。</li>
+<li><strong>pwd</strong>: 显示当前工作目录的路径。</li>
+<li><strong>mkdir</strong>: 创建新目录。</li>
+<li><strong>cp</strong>: 复制文件或目录。</li>
+<li><strong>mv</strong>: 移动文件或目录，也可以用于重命名文件。</li>
+<li><strong>rm</strong>: 删除文件或目录。请小心使用，避免误删重要数据。</li>
+<li><strong>grep</strong>: 在文件中搜索指定的文本模式。</li>
+<li><strong>cat</strong>: 显示文件的内容。<br>例：<code>$ cat /proc/version</code>查看当前系统内核版本信息<br><code>$ cat /etc/redhat- release</code>查看当前系统发行版本信息</li>
+<li><strong>tail</strong>: 显示文件的末尾内容，常用于查看日志文件。<br>例：<code>$ tail -f</code>动态查看日志文件内容<br><code>$ tail -行数 文件名</code>查看文件的后X行内容</li>
+<li><strong>head</strong>: 显示文件的开头内容。</li>
+<li><strong>chmod</strong>: 修改文件或目录的权限。</li>
+<li><strong>chown</strong>: 修改文件或目录的所有者。</li>
+<li><strong>ps</strong>: 显示当前运行的进程。<br>例：<code>$ ps -aux</code>:查看当前系统下的进程信息<br><code>$ ps -aux | grep firefox</code>获取火狐浏览器的进程信息（ID）</li>
+<li><strong>top</strong>: 动态显示系统中运行的进程和资源使用情况。</li>
+<li><strong>kill</strong>: 终止运行中的进程。</li>
+<li><strong>netstat</strong>: 显示网络连接、路由和接口信息。<br>例：<code>$ netstat -anptu</code>查看当前系统中（网络相关信息）开放的端口有哪些<br><code>$ netstat -tunlp | grep 端口号</code>查看指定端口号的进程情况</li>
+<li><strong>ifconfig</strong>: 显示和配置网络接口。</li>
+<li><strong>lsof -i:端口号</strong>：查看占用某一端口的程序名称及进程ID（需要root用户权限）。<br>注意：1.可以通过<code>$ kill -9 进程ID</code>命令完成对端口占用程序的移除</li>
+<li><strong>ping</strong>: 测试与其他主机的网络连接。</li>
+<li><strong>traceroute</strong>: 显示数据包在网络上的传输路径。</li>
+<li><strong>wget</strong>: 下载文件或资源。</li>
+<li><strong>curl</strong>: 发送HTTP请求并显示响应。</li>
+<li><strong>tar</strong>: 创建、压缩和解压缩归档文件。<br>例：<code>$ tar -zcvf test.tar.gz file01 dir01</code>压缩文件file01和目录dir01到test.tar.gz<br><code>tar -zxvf test.tar.gz</code>解压test.tar.gz(将 c 换成 x 即可)<br><code>tar -ztvf test.tar.gz</code>列出压缩文件的内容</li>
+<li><strong>diff</strong>: 比较两个文件的差异。</li>
+<li><strong>ssh</strong>: 安全登录到远程主机。</li>
+<li><strong>scp</strong>: 在本地主机和远程主机之间复制文件。</li>
+<li><strong>rsync</strong>: 同步文件和目录之间的内容。</li>
+<li><strong>reboot</strong>：重启当前系统。</li>
+<li><strong>shutdown</strong>：关闭当前系统。<br>例：<code>$ shutdown -h now</code>立即关闭系统</li>
+<li><strong>touch</strong>：在当前目录下创建文件。例：<code>$ touch cm_demo</code>在当前目录下创建文件cm_demo</li>
+</ol>
+<p>这些命令可以帮助你在Linux环境中进行常见的测试任务和故障排除。记住，在使用这些命令时要小心谨慎，以免对系统造成不必要的影响。</p>
 
                 
             </div>
@@ -498,7 +535,7 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/">http://aiss.love/2023/08/23/hexo-jie-jue-shi-yong-hexo-da-jian-ge-ren-bo-ke-yu-dao-de-yi-xie-wen-ti/</a>
+                    <a href="http://aiss.love/2023/09/12/linux-ruan-jian-ce-shi-zhong-de-linux/">http://aiss.love/2023/09/12/linux-ruan-jian-ce-shi-zhong-de-linux/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -536,8 +573,12 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/Software-testing/">
+                                    <span class="chip bg-color">Software testing</span>
                                 </a>
                             
                         </div>
@@ -616,16 +657,17 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/08/24/hexo-ru-he-xie-markdown-wen-dang-bing-shi-yong-hexo-fa-bu-bo-ke/">
+                <a href="/2023/09/12/linux-ruan-jian-ce-shi-zhong-de-linux/">
                     <div class="card-image">
                         
-                        <img src="https://pic.rmb.bdstatic.com/01e84c77bd7cfd4d625cec99371a7d0c.jpeg" class="responsive-img" alt="Hexo——如何写markdown文档并使用hexo发布博客">
+                        <img src="https://img2.baidu.com/it/u=3732659581,2264503440&fm=253&fmt=auto&app=138&f=JPEG?w=952&h=500" class="responsive-img" alt="Linux——软件测试中的Linux">
                         
-                        <span class="card-title">Hexo——如何写markdown文档并使用hexo发布博客</span>
+                        <span class="card-title">Linux——软件测试中的Linux</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -635,30 +677,31 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-08-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-09-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    软件测试
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
                     </a>
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/Software-testing/">
+                        <span class="chip bg-color">Software testing</span>
                     </a>
                     
                 </div>
@@ -672,12 +715,12 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/08/21/hexo-tong-guo-hexo-da-jian-ge-ren-bo-ke/">
+                <a href="/2023/08/28/webpack-xue-xi-webpack-de-ji-ben-shi-yong/">
                     <div class="card-image">
                         
-                        <img src="https://pic1.zhimg.com/v2-f5ca1150bf22dd77e636b0e2fced6d1c_1440w.jpg?source=172ae18b" class="responsive-img" alt="Hexo——通过Hexo和GitHub搭建个人博客">
+                        <img src="https://img2.baidu.com/it/u=1996633180,3978734451&fm=253&fmt=auto&app=138&f=JPEG?w=966&h=500" class="responsive-img" alt="webpack——学习webpack的基本使用">
                         
-                        <span class="card-title">Hexo——通过Hexo和GitHub搭建个人博客</span>
+                        <span class="card-title">webpack——学习webpack的基本使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -688,14 +731,14 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -705,12 +748,12 @@ Port 443<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/tags/webpack/">
+                        <span class="chip bg-color">webpack</span>
                     </a>
                     
-                    <a href="/tags/Github/">
-                        <span class="chip bg-color">Github</span>
+                    <a href="/tags/vue/">
+                        <span class="chip bg-color">vue</span>
                     </a>
                     
                 </div>

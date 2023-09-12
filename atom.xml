@@ -6,7 +6,7 @@
   <link href="http://aiss.love/atom.xml" rel="self"/>
   
   <link href="http://aiss.love/"/>
-  <updated>2023-08-28T12:15:00.372Z</updated>
+  <updated>2023-09-12T12:44:35.703Z</updated>
   <id>http://aiss.love/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux——软件测试中的Linux</title>
+    <link href="http://aiss.love/2023/09/12/linux-ruan-jian-ce-shi-zhong-de-linux/"/>
+    <id>http://aiss.love/2023/09/12/linux-ruan-jian-ce-shi-zhong-de-linux/</id>
+    <published>2023-09-12T12:35:39.000Z</published>
+    <updated>2023-09-12T12:44:35.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Linux是一种开源的操作系统内核，最初由Linus</summary>
+        
+      
+    
+    
+    
+    <category term="软件测试" scheme="http://aiss.love/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="Linux" scheme="http://aiss.love/tags/Linux/"/>
+    
+    <category term="Software testing" scheme="http://aiss.love/tags/Software-testing/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack——学习webpack的基本使用</title>
