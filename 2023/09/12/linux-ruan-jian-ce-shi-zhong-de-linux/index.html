@@ -413,14 +413,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    8 分
                 </div>
                 
 
@@ -476,18 +476,19 @@
 <p>总之，Linux作为一个多样性、稳定性和性能强大的操作系统，为软件测试提供了一个理想的平台，可以确保软件在各种不同情况下都能正常运行。</p>
 <h2 id="软件测试中常用的linux命令"><a href="#软件测试中常用的linux命令" class="headerlink" title="软件测试中常用的linux命令"></a>软件测试中常用的linux命令</h2><p>在软件测试中，以下是一些常用的Linux命令，可以帮助你进行测试和排查问题：</p>
 <ol>
-<li><strong>ls</strong>: 列出目录中的文件和子目录。</li>
-<li><strong>cd</strong>: 切换当前工作目录。</li>
+<li><strong>ls</strong>: 列出目录中的文件和子目录。<br>例：<code>$ ls -l</code>显示详细列表<br><code>$ ls -a</code>列出当前目录中的所有文件（包括隐藏文件，以.开头的）<br><code>$ ls &gt; 1.txt</code>把命令返回的结果输出到文件中，会覆盖之前的数据，默认情况命令返回的结果是显示在屏幕中<br><code>$ ls &gt;&gt; 1.txt</code>把命令返回的结果输出到文件中，追加的方式</li>
+<li><strong>cd</strong>: 切换当前工作目录。<br>例：<code>$ cd /home</code>绝对路径 以根目录开头<br><code>$ cd admin</code>相对路径 不以根目录开头<br><code>$ cd ..</code>返回上级目录<br><code>$ cd ~</code>回到自己的家目录 /home/admin<br><code>$ cd -</code>电视回看功能</li>
 <li><strong>pwd</strong>: 显示当前工作目录的路径。</li>
-<li><strong>mkdir</strong>: 创建新目录。</li>
-<li><strong>cp</strong>: 复制文件或目录。</li>
-<li><strong>mv</strong>: 移动文件或目录，也可以用于重命名文件。</li>
-<li><strong>rm</strong>: 删除文件或目录。请小心使用，避免误删重要数据。</li>
-<li><strong>grep</strong>: 在文件中搜索指定的文本模式。</li>
-<li><strong>cat</strong>: 显示文件的内容。<br>例：<code>$ cat /proc/version</code>查看当前系统内核版本信息<br><code>$ cat /etc/redhat- release</code>查看当前系统发行版本信息</li>
+<li><strong>mkdir</strong>: 创建新目录。<br>例：<code>$ mkdir pic mov</code>当前目录下创建pic和mov文件夹<br><code>$ mkdir /home/admin/movie</code>以绝对路径在指定文件夹下创建movie文件夹<br><code>$ mkdir pic/{a,b}</code>在pic文件夹下创建a和b两个文件夹<br><code>$ mkdir /home/admin/null/tupian -p</code>如果上级目录不存在，加上-p自动创建父目录</li>
+<li><strong>cp</strong>: 复制文件或目录。<br>例：<code>$ cp 1.txt 2.txt</code>前面是源文件，后面是目标文件<br><code>$ cp abc abc_bak -r</code>拷贝文件夹</li>
+<li><strong>mv</strong>: 移动文件或目录，也可以用于重命名文件。<br>例：<code>$ mv 1.txt 2.txt</code>将1.txt重命名为2.txt<br><code>$ mv 1.txt ~</code>移动到指定目录</li>
+<li><strong>rm</strong>: 删除文件或目录。请小心使用，避免误删重要数据。<br>例：<code>$ rm a.txt</code>删除文件<br><code>$ rm abc -r</code>删除文件夹<br><code>$ rm * -r</code>删除当前目录下的所有内容，不能删除隐藏文件，.和..删除不掉</li>
+<li><strong>grep</strong>: 在文件中搜索指定的文本模式。<br>例：<code>$ grep hello test.txt</code>在某个文件中查找包含hello的内容，只要一行中有hello会把整行显示<br><code>$ grep -niv hello test.txt</code>n显示查找到的内容的行号，i查找时不区分大小写，v反向查找，查找不包含hello的行<br><code>$ grep -n hello /home/admin -r</code>查找整个目录中的所有文件，包含hello的内容</li>
+<li><strong>more</strong>：查看文件内容，可以分页显示。<br>例：<code>$ ls / &gt;&gt; 1.txt</code><br><code>$ more 1.txt</code>查看内容多的文件，按空格键往下翻页，按b键往回翻页，按q键退出</li>
+<li><strong>cat</strong>: 显示文件的内容。<br>例：<code>$ cat 1.txt</code>把文件内容全部显示到屏幕中<br><code>$ cat /proc/version</code>查看当前系统内核版本信息<br><code>$ cat /etc/redhat- release</code>查看当前系统发行版本信息</li>
 <li><strong>tail</strong>: 显示文件的末尾内容，常用于查看日志文件。<br>例：<code>$ tail -f</code>动态查看日志文件内容<br><code>$ tail -行数 文件名</code>查看文件的后X行内容</li>
 <li><strong>head</strong>: 显示文件的开头内容。</li>
-<li><strong>chmod</strong>: 修改文件或目录的权限。</li>
+<li><strong>chmod</strong>: 修改文件或目录的权限。(u：文件的拥有者，g：文件的拥有的组，o：其他用户，a：所有用户)<br>例：<code>$ chmod u+r test.txt</code>给文件的拥有者添加r(读)权限,+添加权限<br><code>$ chmod u-w test.txt</code>给文件的拥有者删除w(写)权限,-删除权限<br><code>$ chmod a=rwx test.txt</code>给所有用户设定r：4(读)w：2(写)x：1(执行)权限,=设定权限</li>
 <li><strong>chown</strong>: 修改文件或目录的所有者。</li>
 <li><strong>ps</strong>: 显示当前运行的进程。<br>例：<code>$ ps -aux</code>:查看当前系统下的进程信息<br><code>$ ps -aux | grep firefox</code>获取火狐浏览器的进程信息（ID）</li>
 <li><strong>top</strong>: 动态显示系统中运行的进程和资源使用情况。</li>
@@ -499,14 +500,14 @@
 <li><strong>traceroute</strong>: 显示数据包在网络上的传输路径。</li>
 <li><strong>wget</strong>: 下载文件或资源。</li>
 <li><strong>curl</strong>: 发送HTTP请求并显示响应。</li>
-<li><strong>tar</strong>: 创建、压缩和解压缩归档文件。<br>例：<code>$ tar -zcvf test.tar.gz file01 dir01</code>压缩文件file01和目录dir01到test.tar.gz<br><code>tar -zxvf test.tar.gz</code>解压test.tar.gz(将 c 换成 x 即可)<br><code>tar -ztvf test.tar.gz</code>列出压缩文件的内容</li>
+<li><strong>tar</strong>: 创建、压缩和解压缩归档文件。<br>例：<code>$ tar -zcvf test.tar.gz file01 dir01</code>压缩文件file01和目录dir01到test.tar.gz<br><code>$ tar -zxvf test.tar.gz</code>解压test.tar.gz(将 c 换成 x 即可)<br><code>$ tar -ztvf test.tar.gz</code>列出压缩文件的内容</li>
 <li><strong>diff</strong>: 比较两个文件的差异。</li>
 <li><strong>ssh</strong>: 安全登录到远程主机。</li>
 <li><strong>scp</strong>: 在本地主机和远程主机之间复制文件。</li>
 <li><strong>rsync</strong>: 同步文件和目录之间的内容。</li>
 <li><strong>reboot</strong>：重启当前系统。</li>
 <li><strong>shutdown</strong>：关闭当前系统。<br>例：<code>$ shutdown -h now</code>立即关闭系统</li>
-<li><strong>touch</strong>：在当前目录下创建文件。例：<code>$ touch cm_demo</code>在当前目录下创建文件cm_demo</li>
+<li><strong>touch</strong>：在当前目录下创建文件。<br>例：<code>$ touch cm_demo</code>在当前目录下创建文件cm_demo<br><code>$ touch cm_demo/hello.txt</code>在指定目录下创建hello.txt文件<br><code>$ touch .abc</code>创建隐藏文件</li>
 </ol>
 <p>这些命令可以帮助你在Linux环境中进行常见的测试任务和故障排除。记住，在使用这些命令时要小心谨慎，以免对系统造成不必要的影响。</p>
 
